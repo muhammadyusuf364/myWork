@@ -38,8 +38,11 @@ body {
   opacity: 0;
   animation: slideRight 1s ease forwards;
 }
+.logo:hover{
+  color: #0ef;
+}
 .navbar a {
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 25px;
   color: #fff;
   text-decoration: none;
@@ -135,7 +138,6 @@ body {
   background: #0ef;
   border-radius: 30px;
   text-decoration: underline;
-  
 }
 .parent a:hover {
   background: #0ef;
@@ -701,8 +703,6 @@ form textarea {
   position: fixed;
   bottom: 2.1rem;
   right: 2.1rem;
-  
-
 }
 .top i {
   color: #000;
@@ -712,16 +712,20 @@ form textarea {
   border-radius: 0.5rem;
   transition: 3s ease;
 }
-.hidden {
+/* .hidden {
   display: none;
-}
+} */
 .respons {
+  display: none;
   width: 390px;
   padding: 30px 120px;
   height: 250px;
-  background: #081b29;
+  /* background: #091e2c; */
   position: absolute;
-  top: 100px;
+  top: 50px;
+  right: 0px;
+  background: rgba(rgb(10, 31, 45) 0.5);
+  backdrop-filter: blur(20px);
 }
 .navbars a {
   display: flex;
@@ -739,16 +743,14 @@ form textarea {
   color: #0ef;
 }
 
-.menu {
-  font-size: 30px;
-  color: #0ef;
+.link{
   display: none;
   text-decoration: none;
 }
-/* .menu-x{
-  font-size: 35px;
-  color: #0ef;
-} */
+.menu:hover .respons {
+  display: block;
+}
+
 @keyframes slideRight {
   0% {
     transform: translateX(-100px);
@@ -818,6 +820,14 @@ form textarea {
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 700px){
+  .link {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+}
 @media only screen and (max-width: 520px) {
   .home {
     margin-top: 200px;
@@ -883,18 +893,15 @@ form textarea {
   .professional {
     margin-top: 80px;
   }
-  .about{
+  .about {
     display: flex;
     flex-direction: column;
   }
+ 
 }
 @media only screen and (max-width: 450px) {
-  .menu {
-    display: block;
-  }
-  .navbar {
-    display: none;
-  }
+ 
+
   .container1 {
     padding: 30px 30px;
   }

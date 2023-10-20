@@ -9,7 +9,7 @@ const menu = document.querySelector(".menu");
 const menux = document.querySelector(".menu-x");
 const respons = document.querySelector(".respons");
 
-menu.addEventListener("click", () => {
-  respons.classList.toggle("hidden");
-  menux.classList.toggle("hidden");
-});
+// menu.addEventListener("click", () => {
+//   respons.classList.toggle("hidden");
+//   menux.classList.toggle("hidden");
+// });
